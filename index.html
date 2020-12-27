@@ -1,65 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./style.css" />
-		<title>Гусеиног Лайв</title>
-	</head>
-	<body>
-		<header>
-			<div class="logo-container">
-				<img src="./img/logo.svg" alt="logo" />
-				<h4 class="logo">Three Dots</h4>
-			</div>
-			<nav>
-				<ul class="nav-links">
-					<li><a class="nav-link" href="#">Specs</a></li>
-					<li><a class="nav-link" href="#">Products</a></li>
-					<li><a class="nav-link" href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="cart">
-				<img src="./img/cart.svg" alt="cart" />
-			</div>
-		</header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Гусеиног Лайв</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    </head>
+    <body>
+        
+        <!--Header-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=""><img src="./img/logo.djf"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item-active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COonect</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-		<main>
-			<section class="presentation">
-				<div class="introduction">
-					<div class="intro-text">
-						<h1>Laptop for the future</h1>
-						<p>
-							The new 14 inch bezeless display oferring a 4k
-							display with touch screen.
-						</p>
-					</div>
-					<div class="cta">
-						<button class="cta-select">14 Inch</button>
-						<button class="cta-add">Add To Cart</button>
-					</div>
-				</div>
-				<div class="cover">
-					<img src="./img/matebook.png" alt="matebook" />
-				</div>
-			</section>
+        <!--Image slider-->
 
-			<div class="laptop-select">
-				<img src="./img/arrow-left.svg" alt="" />
-				<img src="./img/dot.svg" alt="" />
-				<img src="./img/dot-full.svg" alt="" />
-				<img src="./img/dot-full.svg" alt="" />
-				<img src="./img/arrow-right.svg" alt="" />
-			</div>
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/background2.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="display-2">bootstrap</h1>
+                        <h3>Complete website</h3>
+                        <button type="button" class="btn btn-outline-light btn-lg"> View Demo</button>
+                        <button type="button" class="btn btn-primary btn-lg">Get strated</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/logo.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/background1.jpg">
+                </div>
+            </div>
+        </div>
 
-			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
-			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
-			<img class="small-circle" src="./img/small-eclipse.svg" alt="" />
-		</main>
-	</body>
+        <!--Jumbotron-->
+
+        <div class="container-fluid">
+            <div class="row jumbotron">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                    <p class="lead"> Some random text that needs to be tested to check the post </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                    <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hostring</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Wlcome section-->
+        
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Built with ease</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p clas="lead"> Hellow this is also a paragraph test text Hellow this is also a paragraph test t
+                        extHellow this is also a paragraph Hellow this is also a paragraph test textHellow this is
+                         also a paragraph test textHellow this is also a paragraph test texttest textHellow this is 
+                         also a paragraph test text</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Three column section-->
+
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-code"></i>
+                    <h3>HTML5</h3>
+                    <p>Built with HTML5</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-bold"></i>
+                    <h3>Bootsrap</h3>
+                    <p>Built with Bootstrap5</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fab fa-css3"></i>
+                    <h3>CSS3</h3>
+                    <p>Built with Css</p>
+                </div>
+                
+            </div>
+            <hr class="my-4">
+        </div>
+
+        <!--Two column section-->
+        
+        <div class="contaier-fluid padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <h2>If you build it ...</h2>
+                    <p>Plese check it out for us</p>
+                    <p>How is it going </p>
+                    <p>The world is made of glue</p>
+                    <br>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./img/background1.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!--Fixed background-->
+        <figure>
+            <div class="fixed-wrap">
+                <div id="fixed">
+
+                </div>
+            </div>
+        </figure>
+
+        <!--Hidden Emoji-->
+
+        <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
+        <div id="emoji" class="collapse">
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-3">
+                        <img class="gif" src="./img/gg.gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img class="gif" src="./img/gg.gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img class="gif" src="./img/gg.gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img class="gif" src="./img/gg.gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Meet the team-->
+
+        <div class="contaier-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Meet the team</h1>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <!--Cards-->
+
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/background1.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text"> This is paragraph text</p>
+                            <a href="#" class="btn btn-outline-secondary">See profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/background2.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Some else</h4>
+                            <p class="card-text"> This is paragraph text</p>
+                            <a href="#" class="btn btn-outline-secondary">See profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/background1.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Something else</h4>
+                            <p class="card-text"> This is paragraph text</p>
+                            <a href="#" class="btn btn-outline-secondary">See profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Another two section-->
+
+        <div class="contaier-fluid padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <h2>Our philosophy.</h2>
+                    <p>Plese check it out for us</p>
+                    <p>How is it going </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./img/background2.jpg" class="img-fluid">
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+
+
+        <!--Coonect-->
+
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <h2>Coonect</h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="facebook.com"><i class="fab fa-instagram"></i></a>
+                    <a href="facebook.com"><i class="fab fa-twitter"></i></a>
+                    <a href="facebook.com"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="./img/">
+                        <hr class="light">
+                        <p>555-555-5555</p>
+                        <p>emai.com</p>
+                        <p>1000 street</p>
+                        <p>Moscow</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Our hours</h5>
+                        <hr class="light">
+                        <p>Monday: 14-15</p>
+                        <p>Tuesday: 6-9</p>
+                        <p>Friday: 8-11</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>City state</h5>
+                        <hr class="light">
+                        <p>000000</p>
+                        <p>000000</p>
+                        <p>000000</p>
+                    </div>
+
+                    <div class="col-12">
+                        <hr class="light-100">
+                        <h5>&copy; guseinog.live</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
