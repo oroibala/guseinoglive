@@ -119,7 +119,11 @@ html, body {
     color: #bb0000;
 }
 
-.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover {
+.fa-vk {
+    color: #3b5998
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover, .fa-vk:hover {
     color: #d5d5d5;
 } 
 
